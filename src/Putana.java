@@ -1,5 +1,8 @@
 public class Putana {
 
+
+
+
     private int id;
 
     public int getId() {

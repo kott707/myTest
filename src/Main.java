@@ -4,5 +4,7 @@ public class Main {
         System.out.println();
         Putana putana = new Putana();
         putana.getId();
+        React re = new React();
+        re.setName("Yorik");
     }
 }
