@@ -7,7 +7,7 @@ public class Counter {
 
     public static int number;
 
-    int[] primeNumbers = new int[number];
+    final int[] primeNumbers = new int[number];
 
     public static void start() {
         System.out.println("Введите количество чисел для поиска и вывода суммы:");
@@ -36,7 +36,7 @@ public class Counter {
         System.out.println("Сумма простых чисел вышла: " + sum(primeNumbers));
         System.out.println("Ваши числа: " + Arrays.toString(primeNumbers));
     }
-    public int findNextPrimeNumber(int number, int[] primeNumbers, int currentIndex) {
+    private int findNextPrimeNumber(int number, int[] primeNumbers, int currentIndex) {
         boolean isPrime = isPrime(number, primeNumbers, currentIndex);
 
         if (isPrime) {
@@ -49,7 +49,7 @@ public class Counter {
     }
 
     //    Метод проверки конкретного числа на то, является ли оно простым
-    public boolean isPrime(int number, int[] primeNumbers, int currentIndex) {
+    private boolean isPrime(int number, int[] primeNumbers, int currentIndex) {
         int j = 0;
         boolean isPrime = true;
 
@@ -64,11 +64,11 @@ public class Counter {
     }
 
 
-    public int sum(int[] numbers) {
+    private int sum(int[] numbers) {
         return sum(numbers, 0);
     }
 
-    public int sum(int[] numbers, int i) {
+    private int sum(int[] numbers, int i) {
         if (i == numbers.length - 1) {
             return numbers[i];
         }
