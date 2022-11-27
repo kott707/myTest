@@ -9,15 +9,18 @@ public class Main {
         animals[2] = new Cow("Marusya", "white");
 
         //статический метод в Мейн, обходим запросы instanceof + getClass и тд
-        showAnimal(animals);
+  //      showAnimal(animals);
 
         //статический метод в Animal, проверяем наличие корневого слова названия класса, к примеру Dog
-        Animal.weCheckOurself(animals);
+ //       Animal.weCheckOurself(animals);
 
         /*
         два метода работают, и имеют разный принцип действий.
 
          */
+
+        animals[2].sound();
+        animals[1].sound();
 
 
 

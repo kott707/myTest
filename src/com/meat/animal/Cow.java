@@ -12,16 +12,21 @@ public class Cow extends Animal {
 
     Cow getSound() {
 
-        moo();
+ //       moo();
 
         return this;
     }
 
-    void moo() {
-        System.out.println("Cow says moo");
+    public void sound(){
         super.sound();
 
     }
+
+//    void moo() {
+//        System.out.println("Cow says moo");
+//        super.sound();
+//
+//    }
 
 
 }

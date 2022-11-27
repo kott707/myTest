@@ -14,7 +14,7 @@ public class Animal {
             } else if (i.toString().contains("Dog")){
                 ((Dog)i).woof();
             } else if(i.toString().contains("Cow")){
-                ((Cow)i).moo();
+  //              ((Cow)i).moo();
             }
         }
 
