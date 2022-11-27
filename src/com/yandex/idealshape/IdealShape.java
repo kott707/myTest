@@ -1,7 +1,7 @@
 package com.yandex.idealshape;
 
 public class IdealShape {
-    final char horizon = '-', vertical = '|', lineForward = '/', lineBackward = '\\';
+    char horizon = '-', vertical = '|', lineForward = '/', lineBackward = '\\';
     int size, type;
 
     public IdealShape(int size, int type) {
