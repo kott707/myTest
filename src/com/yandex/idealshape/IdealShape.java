@@ -9,7 +9,17 @@ public class IdealShape {
         this.type = type;
     }
 
-    public void draw(int size, int type){
+    public void draw(){
+
+        if(type == 1){
+            Triangle triangle = new Triangle(size,type);
+            triangle.draw();
+        } else if ( type == 0){
+            Rectangle rectangle = new Rectangle(size,type);
+            rectangle.draw();
+        } else {
+            System.out.println("Нечего рисовать");
+        }
 
     }
 }
