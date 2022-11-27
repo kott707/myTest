@@ -14,13 +14,17 @@ public class Main {
             case 0:
                 System.out.println("Введите ширину стороны квадрата");
                 sideSize = scanner.nextInt();
+                //закоментил устаревший, но рабочий метод, если обращение напрямую
 //                Rectangle rectangle = new Rectangle(sideSize,choice);
 //                rectangle.draw();
                 break;
             case 1:
                 System.out.println("Введите ширину стороны треугольника");
                 sideSize = scanner.nextInt();
-                if(sideSize%2 != 0) sideSize++;
+                if(sideSize%2 != 0) {
+                    sideSize++;   //чтобы треугольник рисовался ровно, нужно чтобы нижняя сторона была четное число.
+                }
+                //закоментил устаревший, но рабочий метод, если обращение напрямую
 //                Triangle triangle = new Triangle(sideSize,choice);
 //                triangle.draw();
                 break;
@@ -32,6 +36,10 @@ public class Main {
 
         IdealShape idealShape = new IdealShape(sideSize, choice);
         idealShape.draw();
+
+
+
+
 
 
 
