@@ -4,9 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         Animal[] animals = new Animal[3];
-        animals[0] = new Cat("Barsik","blue");
-        animals[1] = new Dog("Zhuchka","red");
-        animals[2] = new Cow("Marusya", "white");
+//        animals[0] = new Cat("Barsik","blue");
+//        animals[1] = new Dog("Zhuchka","red");
+//        animals[2] = new Cow("Marusya", "white");
+        new Cat("zhuk","red");
+
 
         //статический метод в Мейн, обходим запросы instanceof + getClass и тд
   //      showAnimal(animals);
@@ -19,8 +21,8 @@ public class Main {
 
          */
 
-        animals[2].sound();
-        animals[1].sound();
+//        animals[2].sound();
+//        animals[1].sound();
 
 
 

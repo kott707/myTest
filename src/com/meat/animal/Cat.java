@@ -7,8 +7,9 @@ public class Cat extends Animal{
     }
 
     public Cat(String name, String color) {
-        this.name = name;
-//        System.out.println("I am a " + color + " Cat");
+      //  this.name = name;
+   //     this();
+        System.out.println("I am a " + color + " Cat");
     }
 
     Cat getSound(){
